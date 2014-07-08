@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ticket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Match.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Klant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OKlantDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OMatchDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OTicketDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OVakDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zitje.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OZitjeDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\build_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\datatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\parameter_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\prepared_statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\resultset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\resultset_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\sqlstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppconn\warning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql_connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gegevens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSingleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KlantDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Abbonement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbonementTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OStadionDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stadion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbonementDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TicketDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StadionDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbonementTypesDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OAbbonementDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TegenstandersDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BanDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VakDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZitjeDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tegenstanders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OTegenstandersDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OBanDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ban.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OAbbonementTypesDAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ticket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Match.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Klant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OKlantDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OMatchDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OTicketDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OVakDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zitje.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OZitjeDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseSingleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KlantDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Abbonement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbonementTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OStadionDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stadion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbonementDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TicketDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StadionDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbonementTypesDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OAbbonementDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TegenstandersDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BanDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VakDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZitjeDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tegenstanders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OTegenstandersDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OBanDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ban.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OAbbonementTypesDAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="mysqlcppconn.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mysqlcppconn.dll" />
+  </ItemGroup>
+</Project>

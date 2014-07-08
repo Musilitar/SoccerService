@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD6222AC-4C61-4F91-8D77-C5425E16E1F1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Tickets</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;HAVE_INT8_T=1;Databank_Online;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(boost);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>mysqlcppconn.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Abbonement.h" />
+    <ClInclude Include="AbbonementDAO.h" />
+    <ClInclude Include="AbbonementTypes.h" />
+    <ClInclude Include="AbbonementTypesDAO.h" />
+    <ClInclude Include="Ban.h" />
+    <ClInclude Include="BanDAO.h" />
+    <ClInclude Include="cppconn\build_config.h" />
+    <ClInclude Include="cppconn\config.h" />
+    <ClInclude Include="cppconn\connection.h" />
+    <ClInclude Include="cppconn\datatype.h" />
+    <ClInclude Include="cppconn\driver.h" />
+    <ClInclude Include="cppconn\exception.h" />
+    <ClInclude Include="cppconn\metadata.h" />
+    <ClInclude Include="cppconn\parameter_metadata.h" />
+    <ClInclude Include="cppconn\prepared_statement.h" />
+    <ClInclude Include="cppconn\resultset.h" />
+    <ClInclude Include="cppconn\resultset_metadata.h" />
+    <ClInclude Include="cppconn\sqlstring.h" />
+    <ClInclude Include="cppconn\statement.h" />
+    <ClInclude Include="cppconn\warning.h" />
+    <ClInclude Include="DatabaseSingleton.h" />
+    <ClInclude Include="Gegevens.h" />
+    <ClInclude Include="Klant.h" />
+    <ClInclude Include="KlantDAO.h" />
+    <ClInclude Include="Match.h" />
+    <ClInclude Include="MatchDAO.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="mysql_connection.h" />
+    <ClInclude Include="mysql_driver.h" />
+    <ClInclude Include="OAbbonementDAO.h" />
+    <ClInclude Include="OAbbonementTypesDAO.h" />
+    <ClInclude Include="OBanDAO.h" />
+    <ClInclude Include="OKlantDAO.h" />
+    <ClInclude Include="OMatchDAO.h" />
+    <ClInclude Include="OStadionDAO.h" />
+    <ClInclude Include="OTegenstandersDAO.h" />
+    <ClInclude Include="OTicketDAO.h" />
+    <ClInclude Include="OVakDAO.h" />
+    <ClInclude Include="OZitjeDAO.h" />
+    <ClInclude Include="Stadion.h" />
+    <ClInclude Include="StadionDAO.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tegenstanders.h" />
+    <ClInclude Include="TegenstandersDAO.h" />
+    <ClInclude Include="Ticket.h" />
+    <ClInclude Include="TicketDAO.h" />
+    <ClInclude Include="Vak.h" />
+    <ClInclude Include="VakDAO.h" />
+    <ClInclude Include="Zitje.h" />
+    <ClInclude Include="ZitjeDAO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Abbonement.cpp" />
+    <ClCompile Include="AbbonementDAO.cpp" />
+    <ClCompile Include="AbbonementTypes.cpp" />
+    <ClCompile Include="AbbonementTypesDAO.cpp" />
+    <ClCompile Include="Ban.cpp" />
+    <ClCompile Include="BanDAO.cpp" />
+    <ClCompile Include="DatabaseSingleton.cpp" />
+    <ClCompile Include="Klant.cpp" />
+    <ClCompile Include="KlantDAO.cpp" />
+    <ClCompile Include="Match.cpp" />
+    <ClCompile Include="MatchDAO.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="OAbbonementDAO.cpp" />
+    <ClCompile Include="OAbbonementTypesDAO.cpp" />
+    <ClCompile Include="OBanDAO.cpp" />
+    <ClCompile Include="OKlantDAO.cpp" />
+    <ClCompile Include="OMatchDAO.cpp" />
+    <ClCompile Include="OStadionDAO.cpp" />
+    <ClCompile Include="OTegenstandersDAO.cpp" />
+    <ClCompile Include="OTicketDAO.cpp" />
+    <ClCompile Include="OVakDAO.cpp" />
+    <ClCompile Include="OZitjeDAO.cpp" />
+    <ClCompile Include="Stadion.cpp" />
+    <ClCompile Include="StadionDAO.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Tegenstanders.cpp" />
+    <ClCompile Include="TegenstandersDAO.cpp" />
+    <ClCompile Include="Ticket.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TicketDAO.cpp" />
+    <ClCompile Include="Vak.cpp" />
+    <ClCompile Include="VakDAO.cpp" />
+    <ClCompile Include="Zitje.cpp" />
+    <ClCompile Include="ZitjeDAO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="mysqlcppconn.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mysqlcppconn.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
